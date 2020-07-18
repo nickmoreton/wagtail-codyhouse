@@ -5,3 +5,7 @@ tasks:
       mv codyhouse-framework-master/** . &&
       rm -R codyhouse-framework-master && 
       rm master.zip
+
+      npm install &&
+      npm install -g gulp &&
+      
