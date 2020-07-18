@@ -1,3 +1,3 @@
 FROM gitpod/workspace-full
 
-RUN sudo chmod +x setup.py
+RUN chmod +x setup.py
