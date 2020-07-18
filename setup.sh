@@ -8,7 +8,7 @@ rm master.zip && rm LICENSE.md && rm README.md && rm gulpfile.js &&
 npm install -g npm && npm install && 
 npm install -g gulp &&
 pyenv local 3.5-dev &&
-python3 -m venv venv &&
+python -m venv venv &&
 pip install wagtail && wagtail start config . &&
 rm Dockerfile && rm requirements.txt &&
 pip install pip --upgrade && mkdir requirements && pip freeze > requirements/base.txt
