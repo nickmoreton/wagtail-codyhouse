@@ -4,7 +4,7 @@ wget https://github.com/CodyHouse/codyhouse-framework/archive/master.zip &&
 unzip master.zip &&
 mv codyhouse-framework-master/** . &&
 rm -R codyhouse-framework-master && 
-rm master.zip && rm LICENSE.md && rm README.md &&
+rm master.zip && rm LICENSE.md && rm README.md && rm gulpfile.js &&
 npm install -g npm && npm install && 
 npm install -g gulp &&
 pyenv local 3.5-dev &&
