@@ -3,4 +3,5 @@ tasks:
       wget https://github.com/CodyHouse/codyhouse-framework/archive/master.zip &&
       unzip master.zip &&
       mv codyhouse-framework-master/** . &&
-      rm -R codyhouse-framework-master
+      rm -R codyhouse-framework-master && 
+      rm master.zip
