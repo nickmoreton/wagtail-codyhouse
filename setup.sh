@@ -7,7 +7,7 @@ rm -R codyhouse-framework-master &&
 rm master.zip && rm LICENSE.md && rm README.md &&
 npm install -g npm && npm install && 
 npm install -g gulp &&
-pyenv install 3.5-dev && pyenv local 3.5-dev &&
+pyenv local 3.5-dev &&
 pip install wagtail && wagtail start config . &&
 rm Dockerfile && rm requirements.txt &&
 pip install pip --upgrade && mkdir requirements && pip freeze > requirements/base.txt
