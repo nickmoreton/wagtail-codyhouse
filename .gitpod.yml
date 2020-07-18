@@ -1,6 +1,7 @@
 tasks:
   - command: >
-      git clone git@github.com:CodyHouse/codyhouse-framework.git . &&
+      git clone git@github.com:CodyHouse/codyhouse-framework.git &&
+      mv codyhouse-framework/**/*.* ../
       
       pyenv install 3.5-dev &&
       pyenv local 3.5-dev &&
