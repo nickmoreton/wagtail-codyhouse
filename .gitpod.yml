@@ -1,8 +1,13 @@
 tasks:
   - command: >
+      git clone git@github.com:CodyHouse/codyhouse-framework.git . &&
+      
       pyenv install 3.5-dev &&
       pyenv local 3.5-dev &&
+      
       pip install --upgrade pip &&
       pip install wagtail
+      
+      python ./manage.py wagtail start config .
 ports:
  - port: 8000
