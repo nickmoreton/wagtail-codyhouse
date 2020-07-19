@@ -2,5 +2,9 @@ image:
   file: .gitpod.Dockerfile
 tasks:
   - init: chmod +x get_frontend.sh && ./get_frontend.sh && chmod +x setup_wagtail.sh && ./setup_wagtail.sh
-    command: ./manage.py runserver 0.0.0.0:8000
-  - command: npm run gulp watch
+    command: |
+      touch /tmp/.manage-lock
+      ./manage.py runserver 0.0.0.0:8000
+      rm /tmp/.manage-lock
+  - init: sleep 1 && while [ -f /tmp/.manage-lock ]; do sleep 1; done
+    command: npm run gulp watch
