@@ -1,12 +1,7 @@
 image:
     file: .gitpod.Dockerfile
 tasks:
-  - init: pip install wagtail && 
-          wagtail start config . && 
-          rm Dockerfile && 
-          rm requirements.txt && 
-          chmod +x get_frontend.sh && 
-          rm get_frontend.sh
+  - init: pip install wagtail && wagtail start config . && rm Dockerfile && rm requirements.txt && chmod +x get_frontend.sh && rm get_frontend.sh
   - command: ./manaage.py runserver 0.0.0.0:8000
     name: wagtail
   - openMode: splitright
