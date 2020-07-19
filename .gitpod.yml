@@ -3,3 +3,4 @@ image:
 tasks:
   - init: chmod +x get_frontend.sh && ./get_frontend.sh && chmod +x setup_wagtail.sh && ./setup_wagtail.sh
     command: ./manage.py runserver 0.0.0.0:8000
+  - command: npm run gulp watch
