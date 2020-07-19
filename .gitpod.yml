@@ -1,7 +1,7 @@
 image:
     file: .gitpod.Dockerfile
 tasks:
-  - init: >
+  - init: |
       pip install wagtail && 
       wagtail start config . && 
       rm Dockerfile && 
