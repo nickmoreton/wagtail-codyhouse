@@ -11,7 +11,7 @@ var rename = require('gulp-rename');
 var uglify = require('gulp-uglify');
 
 // CODYHOUSE
-// var staticFilesPath = 'main/assets';
+// var staticFilesPath = '_theme/assets';
 // var browserSyncObj = {
 //     server: {
 //       baseDir: 'main'
@@ -30,13 +30,13 @@ var browserSyncObj = {
 }
 
 // js file paths
-var utilJsPath = 'main/assets/js'; // util.js path - you may need to update this if including the framework as external node module
-var componentsJsPath = 'main/assets/js/components/*.js'; // component js files
+var utilJsPath = '_theme/assets/js'; // util.js path - you may need to update this if including the framework as external node module
+var componentsJsPath = '_theme/assets/js/components/*.js'; // component js files
 var scriptsJsPath = staticFilesPath + '/js'; //folder for final scripts.js/scripts.min.js files
 
 // css file paths
 var cssFolder = staticFilesPath + '/css'; // folder for final style.css/style-custom-prop-fallbac.css files
-var scssFilesPath = 'main/assets/css/**/*.scss'; // scss files to watch
+var scssFilesPath = '_theme/assets/css/**/*.scss'; // scss files to watch
 
 function reload(done) {
   browserSync.reload();
@@ -82,7 +82,7 @@ gulp.task('browserSync', gulp.series(function (done) {
 gulp.task('watch', gulp.series(['browserSync', 'sass', 'scripts'], function () {
   gulp.watch('**/*.html', gulp.series(reload));
   gulp.watch('**/*.py', gulp.series(reload));
-  gulp.watch('main/*.html', gulp.series(reload));
-  gulp.watch('main/assets/css/**/*.scss', gulp.series(['sass']));
+  gulp.watch('_theme/*.html', gulp.series(reload));
+  gulp.watch('_theme/assets/css/**/*.scss', gulp.series(['sass']));
   gulp.watch(componentsJsPath, gulp.series(['scripts']));
 }));
