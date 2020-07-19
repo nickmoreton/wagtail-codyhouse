@@ -1,4 +1,4 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  init: chmod +x get_frontend.sh && ./get-frontend.sh
+  init: ./get-frontend.sh
