@@ -1,5 +1,5 @@
 tasks:
 - init: >
-    pyenv install 3.5-dev && pyenv local 3.5-dev && python -m venv venv
+    pyenv install 3.5-dev && pyenv global 3.5-dev
   command: >
-    source venv/bin/activate
+    python -m venv venv && source venv/bin/activate
