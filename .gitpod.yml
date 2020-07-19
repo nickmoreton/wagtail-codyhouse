@@ -1,8 +1,5 @@
-
-image: 
-  file: .gitpod.Dockerfile
- tasks:
-  - init: >
-      pyenv install 3.5-dev && pyenv local 3.5-dev && python -m ven venv
-    command: >
-      source venv/bin/activate
+tasks:
+- init: >
+    pyenv install 3.5-dev && pyenv local 3.5-dev && python -m ven venv
+  command: >
+    source venv/bin/activate
