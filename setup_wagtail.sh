@@ -6,4 +6,4 @@ pip install wagtail \
 && rm requirements.txt \
 && chmod +x get_frontend.sh \
 && rm get_frontend.sh \
-&& rm setup.sh
+&& rm setup_wagtail.sh
