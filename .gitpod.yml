@@ -1,9 +1,4 @@
 image:
-    file: .gitpod.Dockerfile
+  file: .gitpod.Dockerfile
 tasks:
-  - init: chmod +x get_frontend.sh && ./get-frontend.sh
-    command: ./manaage.py runserver 0.0.0.0:8000
-    name: wagtail
-  - openMode: splitright
-    command: npm run gulp watch
-    name: gulp
+  init: chmod +x get_frontend.sh && ./get-frontend.sh
