@@ -1,4 +1,4 @@
 FROM gitpod/workspace-full
 
 USER gitpod
-RUN pyenv install 3.5 && pyenv global 3.5
+RUN pyenv install 3.5-dev && pyenv global 3.5-dev
