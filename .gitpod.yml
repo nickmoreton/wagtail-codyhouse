@@ -1,4 +1,4 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: chmod +x get_frontend.sh && ./get_frontend.sh
+  - init: chmod +x get_frontend.sh && ./get_frontend.sh && chmod +x setup_wagtail.sh && ./setup_wagtail.sh
