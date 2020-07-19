@@ -5,4 +5,5 @@ pip install wagtail \
 && rm Dockerfile \
 && rm requirements.txt \
 && chmod +x get_frontend.sh \
-&& rm get_frontend.sh
+&& rm get_frontend.sh \
+&& rm setup.sh
