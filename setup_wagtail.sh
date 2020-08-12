@@ -1,6 +1,6 @@
 #!/bin/bash
-
-pip install wagtail \
+pip install pip --upgrade \
+&& pip install wagtail \
 && wagtail start config . \
 && ./manage.py migrate \
 && ./manage.py collectstatic \
