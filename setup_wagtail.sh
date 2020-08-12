@@ -1,6 +1,6 @@
 #!/bin/bash
 pip install pip --upgrade \
-&& pip install wagtail \
+&& pip install wagtail==2.9.3 \
 && wagtail start config . \
 && ./manage.py migrate \
 && ./manage.py collectstatic \
