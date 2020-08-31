@@ -26,4 +26,4 @@ You can find the above commands in `get_frontend.sh`
 The overall process is a regular wagtail setup.
 Additionally the `setup_wagtail.sh` does some file management to tidy up once installed.
 
-You can find the aboce commands in `setup_wagtail.sh`
+You can find the above commands in `setup_wagtail.sh`
