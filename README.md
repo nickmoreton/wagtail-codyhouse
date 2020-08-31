@@ -16,7 +16,7 @@ comment out the line to use the default version that starts up in gitpod.
 
 ## CODYHOUSE
 
-The overall process installs codyhouse framework into `_theme`
+The overall process installs [Codyhouse Framework](https://github.com/CodyHouse/codyhouse-framework) into `_theme`
 Then swaps out the gulpfile.js for my prefered one
 And runs npm install from the codyhouse package.json file
 
