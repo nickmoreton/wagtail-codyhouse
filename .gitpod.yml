@@ -1,6 +1,11 @@
 image:
   file: .gitpod.Dockerfile
 tasks:
-  - init: chmod +x get_frontend.sh && ./get_frontend.sh && chmod +x setup_wagtail.sh && ./setup_wagtail.sh
+  - init: >
+      chmod +x get_frontend.sh && 
+      ./get_frontend.sh && 
+      chmod +x setup_wagtail.sh && 
+      ./setup_wagtail.sh &&
+      echo "from django.contrib.auth import get_user_model; get_user_model().objects.create_superuser('admin', '', 'changeme')" | python3 manage.py shell
     command: ./manage.py runserver 0.0.0.0:8000
   - command: gp await-port 8000 && npm run gulp watch
