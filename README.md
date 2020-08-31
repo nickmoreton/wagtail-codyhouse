@@ -9,6 +9,9 @@ or
 
 comment out the line to use the default version that starts up in gitpod.
 
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/nickmoreton/wagtail-codyhouse)
+
+
 =========================
 
 ## CODYHOUSE
